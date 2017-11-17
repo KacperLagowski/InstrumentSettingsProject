@@ -28,12 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.instrumentSettingsControl1 = new InstrumentSettingsProject.InstrumentSettingsControl();
+            this.SuspendLayout();
+            // 
+            // instrumentSettingsControl1
+            // 
+            this.instrumentSettingsControl1.Location = new System.Drawing.Point(12, -3);
+            this.instrumentSettingsControl1.Name = "instrumentSettingsControl1";
+            this.instrumentSettingsControl1.Size = new System.Drawing.Size(969, 880);
+            this.instrumentSettingsControl1.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1084, 889);
+            this.Controls.Add(this.instrumentSettingsControl1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private InstrumentSettingsControl instrumentSettingsControl1;
     }
 }
 
