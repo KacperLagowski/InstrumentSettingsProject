@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstrumentSettingsControl));
             this.instrumentEditTabPage = new System.Windows.Forms.TabPage();
-            this.instrumentPropertyGrid = new System.Windows.Forms.PropertyGrid();
-            this.saveButton = new System.Windows.Forms.Button();
-            this.closeButton = new System.Windows.Forms.Button();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
+            this.closeButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.instrumentPropertyGrid = new System.Windows.Forms.PropertyGrid();
             this.errorViewTabPage = new System.Windows.Forms.TabPage();
             this.objInstrument = new BrightIdeasSoftware.ObjectListView();
             this.IDColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
@@ -64,15 +64,24 @@
             this.instrumentEditTabPage.Text = "Instrument View";
             this.instrumentEditTabPage.UseVisualStyleBackColor = true;
             // 
-            // instrumentPropertyGrid
+            // logoPictureBox
             // 
-            this.instrumentPropertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.instrumentPropertyGrid.Location = new System.Drawing.Point(6, 6);
-            this.instrumentPropertyGrid.Name = "instrumentPropertyGrid";
-            this.instrumentPropertyGrid.Size = new System.Drawing.Size(427, 836);
-            this.instrumentPropertyGrid.TabIndex = 1;
+            this.logoPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logoPictureBox.BackgroundImage")));
+            this.logoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.logoPictureBox.Location = new System.Drawing.Point(439, 6);
+            this.logoPictureBox.Name = "logoPictureBox";
+            this.logoPictureBox.Size = new System.Drawing.Size(500, 500);
+            this.logoPictureBox.TabIndex = 4;
+            this.logoPictureBox.TabStop = false;
+            // 
+            // closeButton
+            // 
+            this.closeButton.Location = new System.Drawing.Point(555, 781);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(110, 61);
+            this.closeButton.TabIndex = 3;
+            this.closeButton.Text = "Close";
+            this.closeButton.UseVisualStyleBackColor = true;
             // 
             // saveButton
             // 
@@ -84,24 +93,15 @@
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
             // 
-            // closeButton
+            // instrumentPropertyGrid
             // 
-            this.closeButton.Location = new System.Drawing.Point(555, 781);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(110, 61);
-            this.closeButton.TabIndex = 3;
-            this.closeButton.Text = "Close";
-            this.closeButton.UseVisualStyleBackColor = true;
-            // 
-            // logoPictureBox
-            // 
-            this.logoPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logoPictureBox.BackgroundImage")));
-            this.logoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.logoPictureBox.Location = new System.Drawing.Point(439, 6);
-            this.logoPictureBox.Name = "logoPictureBox";
-            this.logoPictureBox.Size = new System.Drawing.Size(500, 500);
-            this.logoPictureBox.TabIndex = 4;
-            this.logoPictureBox.TabStop = false;
+            this.instrumentPropertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.instrumentPropertyGrid.Location = new System.Drawing.Point(6, 6);
+            this.instrumentPropertyGrid.Name = "instrumentPropertyGrid";
+            this.instrumentPropertyGrid.Size = new System.Drawing.Size(427, 836);
+            this.instrumentPropertyGrid.TabIndex = 1;
             // 
             // errorViewTabPage
             // 
@@ -140,30 +140,36 @@
             // 
             // IDColumn
             // 
+            this.IDColumn.AspectName = "ID_MPM";
             this.IDColumn.Text = "ID";
             // 
             // NameColumn
             // 
+            this.NameColumn.AspectName = "Data_Name";
             this.NameColumn.Text = "Instrument Name";
             this.NameColumn.Width = 218;
             // 
             // ISINColumn
             // 
+            this.ISINColumn.AspectName = "Data_ISIN";
             this.ISINColumn.Text = "ISIN";
             this.ISINColumn.Width = 128;
             // 
             // BloombergIDColumn
             // 
+            this.BloombergIDColumn.AspectName = "Data_BloombergID";
             this.BloombergIDColumn.Text = "BloombergID";
             this.BloombergIDColumn.Width = 172;
             // 
             // PriceColumn
             // 
+            this.PriceColumn.AspectName = "Data_Price";
             this.PriceColumn.Text = "Price";
             this.PriceColumn.Width = 83;
             // 
             // ErrorColumn
             // 
+            this.ErrorColumn.AspectName = "Data_Error";
             this.ErrorColumn.Text = "Error Message";
             this.ErrorColumn.Width = 270;
             // 

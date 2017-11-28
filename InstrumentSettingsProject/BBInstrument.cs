@@ -1,11 +1,9 @@
 ﻿using Bloomberglp.Blpapi;
-using PriceUpdateProgram;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Text;
 
 namespace RefDataExample
 {
